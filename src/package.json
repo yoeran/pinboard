@@ -1,0 +1,33 @@
+{
+  "name": "pinboard",
+  "version": "1.0.0",
+  "productName": "Pinboard",
+  "description": "Simple Electron wrapper for Pinboards add page",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-packager": "^8.3.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build:all": "electron-packager . --all --out=../build --overwrite",
+    "build:osx": "electron-packager . --platform=darwin --out=../build --overwrite",
+    "build:win": "electron-packager . --platform=win32 --out=../build --overwrite",
+    "build:linux": "electron-packager . --platform=linux --out=../build --overwrite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoeran/pinboard.git"
+  },
+  "keywords": [
+    "writing",
+    "flow",
+    "electron"
+  ],
+  "author": "Yoeran Luteijn",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/yoeran/pinboard/issues"
+  },
+  "homepage": "https://github.com/yoeran/pinboard#readme"
+}
